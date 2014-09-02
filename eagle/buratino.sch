@@ -6181,12 +6181,12 @@ SMT- SWCH-08247</description>
 <part name="FRAME1" library="Pinoccio" deviceset="FRAME-LETTER" device=""/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="U4" library="Pinoccio" deviceset="ATMEGA128RFA1" device="" value="ATMEGA256RFR2"/>
-<part name="C7" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
-<part name="C8" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="1.0uF"/>
-<part name="C13" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="12pF"/>
-<part name="C12" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="12pF"/>
-<part name="C15" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="12pF"/>
-<part name="C14" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="12pF"/>
+<part name="C7" library="Pinoccio" deviceset="CAP" device="0603-CAP" value="1.0uF"/>
+<part name="C8" library="Pinoccio" deviceset="CAP" device="0603-CAP" value="1.0uF"/>
+<part name="C13" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="10pF"/>
+<part name="C12" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="10pF"/>
+<part name="C15" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="10pF"/>
+<part name="C14" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="10pF"/>
 <part name="C9" library="Pinoccio" deviceset="CAP" device="0402-CAP" value="1.0pF"/>
 <part name="B1" library="Pinoccio" deviceset="BALUN" device="0805" value="BALUN"/>
 <part name="Y1" library="SparkFun" deviceset="ANTENNA2" device="SMD5"/>
@@ -6236,7 +6236,7 @@ SMT- SWCH-08247</description>
 <part name="SUPPLY5" library="supply2" deviceset="VDD" device=""/>
 <part name="S2" library="Pinoccio" deviceset="SWITCH-SPST" device="SMD2" value="SPST"/>
 <part name="SUPPLY6" library="supply2" deviceset="VDD" device=""/>
-<part name="CIN" library="Pinoccio" deviceset="CAP" device="0603-CAP" value="10uF"/>
+<part name="CIN" library="Pinoccio" deviceset="CAP" device="0805" value="10uF"/>
 <part name="RMPPC" library="Pinoccio" deviceset="RESISTOR" device="0603-RES" value="30.1K"/>
 <part name="CAUX" library="Pinoccio" deviceset="CAP" device="0603-CAP" value="1.0uF"/>
 <part name="CLDO" library="Pinoccio" deviceset="CAP" device="0603-CAP" value="4.7uF"/>
@@ -6264,6 +6264,8 @@ SMT- SWCH-08247</description>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="R4" library="Pinoccio" deviceset="RESISTOR" device="0603-RES" value="47K"/>
 <part name="U$2" library="Pinoccio" deviceset="LOGO-OSHW" device="SILKSCREEN"/>
+<part name="J3" library="Pinoccio" deviceset="SOLDERJUMPER" device="NO" value="Vaux-Vcc Tie"/>
+<part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9073,18 +9075,18 @@ SMT- SWCH-08247</description>
 <attribute name="NAME" x="139.446" y="52.2986" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="137.922" y="47.498" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="U7" gate="G$1" x="231.14" y="68.58" smashed="yes">
-<attribute name="NAME" x="223.52" y="67.31" size="1.778" layer="95"/>
+<instance part="U7" gate="G$1" x="218.44" y="63.5" smashed="yes">
+<attribute name="NAME" x="210.82" y="62.23" size="1.778" layer="95"/>
 </instance>
-<instance part="R5" gate="G$1" x="213.36" y="68.58" smashed="yes" rot="MR270">
-<attribute name="NAME" x="211.8614" y="69.85" size="1.778" layer="95" rot="MR270"/>
-<attribute name="VALUE" x="216.662" y="69.85" size="1.778" layer="96" rot="MR270"/>
+<instance part="R5" gate="G$1" x="200.66" y="63.5" smashed="yes" rot="MR270">
+<attribute name="NAME" x="199.1614" y="64.77" size="1.778" layer="95" rot="MR270"/>
+<attribute name="VALUE" x="203.962" y="64.77" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="GND19" gate="1" x="213.36" y="60.96"/>
-<instance part="GND23" gate="1" x="231.14" y="58.42"/>
-<instance part="C3" gate="G$1" x="238.76" y="66.04" smashed="yes">
-<attribute name="NAME" x="240.284" y="68.961" size="1.778" layer="95"/>
-<attribute name="VALUE" x="240.284" y="63.881" size="1.778" layer="96"/>
+<instance part="GND19" gate="1" x="200.66" y="55.88"/>
+<instance part="GND23" gate="1" x="218.44" y="53.34"/>
+<instance part="C3" gate="G$1" x="226.06" y="60.96" smashed="yes">
+<attribute name="NAME" x="227.584" y="63.881" size="1.778" layer="95"/>
+<attribute name="VALUE" x="227.584" y="58.801" size="1.778" layer="96"/>
 </instance>
 <instance part="R22" gate="G$1" x="165.1" y="71.12" rot="R270"/>
 <instance part="R23" gate="G$1" x="172.72" y="71.12" rot="R270"/>
@@ -9169,6 +9171,10 @@ SMT- SWCH-08247</description>
 <instance part="GND7" gate="1" x="114.3" y="76.2"/>
 <instance part="R4" gate="G$1" x="106.68" y="78.74" rot="R270"/>
 <instance part="U$2" gate="G$1" x="99.06" y="179.07"/>
+<instance part="J3" gate="1" x="233.68" y="71.12" rot="R90"/>
+<instance part="P+1" gate="1" x="233.68" y="76.2" smashed="yes">
+<attribute name="VALUE" x="225.806" y="77.47" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9349,11 +9355,11 @@ SMT- SWCH-08247</description>
 <segment>
 <pinref part="U7" gate="G$1" pin="GND"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="231.14" y1="60.96" x2="231.14" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="55.88" x2="218.44" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="63.5" x2="231.14" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="63.5" x2="231.14" y2="63.5" width="0.1524" layer="91"/>
-<junction x="231.14" y="63.5"/>
+<wire x1="218.44" y1="58.42" x2="218.44" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="58.42" x2="218.44" y2="58.42" width="0.1524" layer="91"/>
+<junction x="218.44" y="58.42"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
@@ -9426,8 +9432,8 @@ SMT- SWCH-08247</description>
 <net name="VCC" class="1">
 <segment>
 <pinref part="U7" gate="G$1" pin="IN"/>
-<wire x1="220.98" y1="71.12" x2="226.06" y2="71.12" width="0.1524" layer="91"/>
-<label x="220.98" y="71.12" size="1.778" layer="95"/>
+<wire x1="208.28" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
+<label x="208.28" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="A"/>
@@ -9495,6 +9501,10 @@ SMT- SWCH-08247</description>
 <pinref part="JP-L" gate="G$1" pin="3"/>
 <wire x1="236.22" y1="172.72" x2="223.52" y2="172.72" width="0.1524" layer="91"/>
 <label x="223.52" y="172.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J3" gate="1" pin="2"/>
+<pinref part="P+1" gate="1" pin="VCC"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -10047,11 +10057,12 @@ SMT- SWCH-08247</description>
 <net name="VCC-AE" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="OUT"/>
-<wire x1="233.68" y1="71.12" x2="238.76" y2="71.12" width="0.1524" layer="91"/>
-<label x="236.22" y="71.12" size="1.778" layer="95"/>
+<wire x1="220.98" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
+<label x="223.52" y="66.04" size="1.778" layer="95"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="238.76" y1="71.12" x2="246.38" y2="71.12" width="0.1524" layer="91"/>
-<junction x="238.76" y="71.12"/>
+<wire x1="226.06" y1="66.04" x2="233.68" y2="66.04" width="0.1524" layer="91"/>
+<junction x="226.06" y="66.04"/>
+<pinref part="J3" gate="1" pin="1"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="149.86" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
@@ -10220,12 +10231,12 @@ SMT- SWCH-08247</description>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="ON"/>
-<wire x1="231.14" y1="76.2" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="71.12" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="73.66" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="76.2" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
-<junction x="213.36" y="76.2"/>
-<label x="205.74" y="76.2" size="1.778" layer="95"/>
+<wire x1="200.66" y1="68.58" x2="200.66" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="71.12" x2="193.04" y2="71.12" width="0.1524" layer="91"/>
+<junction x="200.66" y="71.12"/>
+<label x="193.04" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="PD6"/>
